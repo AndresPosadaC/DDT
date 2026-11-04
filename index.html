@@ -30,7 +30,12 @@ button:focus-visible{outline:3px solid #1D6FB8;outline-offset:2px}
 </header>
 
 <div style="position: sticky; top: 0; z-index: 10; background: #F3F5F8; padding: 8px 0 12px">
-<section aria-live="polite" style="max-width: 1100px; margin: 0 auto; box-sizing: border-box; background: #FFFFFF; border: 1px solid #C9D4E3; border-radius: 16px; box-shadow: 0 6px 20px rgba(20, 33, 61, 0.08); padding: 18px 20px; max-height: 340px; overflow-y: auto">
+<section aria-live="polite" style="max-width: 1100px; margin: 0 auto; box-sizing: border-box; background: #FFFFFF; border: 1px solid #C9D4E3; border-radius: 16px; box-shadow: 0 6px 20px rgba(20, 33, 61, 0.08); padding: 18px 20px; max-height: 380px; overflow-y: auto">
+
+<div role="group" aria-label="View" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px">
+<button type="button" aria-pressed="{{mFwOn}}" onClick="{{toFw}}" style="min-height: 40px; padding: 0 16px; border-radius: 20px; border: 1.5px solid #14213D; background: {{mFwBg}}; color: {{mFwInk}}; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Framework</button>
+<button type="button" aria-pressed="{{mCaseOn}}" onClick="{{toCase}}" style="min-height: 40px; padding: 0 16px; border-radius: 20px; border: 1.5px solid #14213D; background: {{mCaseBg}}; color: {{mCaseInk}}; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Case · Cartagena VIP Mobility</button>
+</div>
 
 <sc-if value="{{show0}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center">
@@ -132,6 +137,98 @@ button:focus-visible{outline:3px solid #1D6FB8;outline-offset:2px}
 </div>
 </sc-if>
 
+<sc-if value="{{c0}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0">
+<div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.16em; color: #8A3B12">CASE · CARTAGENA, COLOMBIA</div>
+<h2 style="margin: 4px 0 6px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 28px; line-height: 34px">From “which cars?” to “which match?”</h2>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #3E4C63">Five partners want to buy cars (USD 40–60k each), hire top drivers and offer VIP rides to executives, tourists, medical patients and event visitors. They ask AI: which cars, and how many, should we buy to run on Uber?</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; font-size: 14px; line-height: 21px; color: #3E4C63">Follow the journey and watch the purpose in the center change. Figures are illustrative assumptions, not a forecast.</div>
+<button type="button" onClick="{{p1}}" style="flex: none; min-height: 44px; padding: 0 20px; border-radius: 22px; border: none; background: #14213D; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: pointer">Start the case →</button>
+</div>
+</sc-if>
+
+<sc-if value="{{c1}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #8A3B12">CASE · STEP 1 · YOU</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Engage</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Why now:</b> “Earn a second income with good cars.”</p></div>
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">WHAT HAPPENS</div><p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: #3E4C63">Five partners, USD 200–300k of personal capital, and a ready answer: buy cars. The first real decision is governance: one lead partner plus a majority vote.</p></div>
+<div style="flex: 1 1 220px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">KEY OUTPUT</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px"><li>Engagement brief</li><li>Draft Big Idea: “Premium only works if clients pay for a better experience. Prove that first.”</li></ul></div>
+</div>
+</sc-if>
+
+<sc-if value="{{c2}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #8A3B12">CASE · STEP 2 · NEED</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Understand</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Why now:</b> still “good cars”, but the mess appears.</p></div>
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">WHAT HAPPENS</div><p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: #3E4C63">Four segments: executives, tourists (about 5.5M passengers through Nov 2025), medical patients (Hospital Serena del Mar is the natural anchor), and events (Andicom 2026 drew 6,000+ attendees). Maintenance, taxes, insurance and client acquisition are undefined. Bill 347 of 2026, which threatened private-car apps, was withdrawn in February, but those apps still lack a clear legal framework: depending on Uber is a liability.</p></div>
+<div style="flex: 1 1 220px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">KEY OUTPUT</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px"><li><span style="color: {{accent}}">◆</span> As-Is diagnosis</li><li>Profiles per segment: jobs, pains, gains</li><li>Map of hotels, clinics, event organizers, regulator</li></ul></div>
+</div>
+</sc-if>
+
+<sc-if value="{{c3}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #4A5568">CASE · STEP 3 · GO</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Frame</h2><p style="margin: 0 0 8px; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Why now:</b> “Win and keep the right clients.”</p><p style="margin: 0; font-size: 14px; line-height: 21px; color: #3E4C63">Doing nothing different means buying 5 cars at USD 50k and running them on an app: <b>USD 250k at risk</b>. At 12 premium trips a day, cash is still −USD 157k after 3 years; selling the cars brings it to about −USD 3k, a break-even at best. The bet rides on a number the partners don’t control, in a channel that is legally contested. Clients already pay a 2–4× premium for executive transfers (about USD 39–77 vs. COP 60,000 standard).</p></div>
+<figure style="flex: 2 1 380px; min-width: 0; margin: 0">
+<figcaption style="font-size: 13px; line-height: 18px; font-weight: 600; color: #22304A">Cumulative cash, 5 cars, 36 months (USD)</figcaption>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 6px 0 4px; font-size: 12px; color: #3E4C63"><span><span style="display: inline-block; width: 16px; height: 2px; background: #B85A0A; vertical-align: middle"></span> Buy cars + app (do nothing)</span><span><span style="display: inline-block; width: 16px; height: 2px; background: #1D6FB8; vertical-align: middle"></span> Hybrid, base</span><span><span style="display: inline-block; width: 16px; height: 0; border-top: 2px dashed #1D6FB8; vertical-align: middle"></span> Hybrid, downside</span></div>
+<svg role="img" aria-label="Line chart. Buying 5 cars starts at minus 250 thousand dollars and reaches minus 157 thousand by month 36, about minus 3 thousand including car resale. The hybrid model bottoms at minus 56 thousand in month 13 and reaches plus 99 thousand; its downside reaches minus 107 thousand." viewBox="0 0 640 300" style="width: 100%; max-width: 640px; height: auto; display: block; font-family: Inter, sans-serif">
+<g stroke="#E4E8EF" stroke-width="1"><line x1="64" x2="520" y1="257.8" y2="257.8"></line><line x1="64" x2="520" y1="195.8" y2="195.8"></line><line x1="64" x2="520" y1="133.8" y2="133.8"></line><line x1="64" x2="520" y1="71.8" y2="71.8"></line></g>
+<line x1="64" x2="520" y1="102.8" y2="102.8" stroke="#8A94A6" stroke-width="1.25"></line>
+<g fill="#5A6B85" font-size="11" text-anchor="end"><text x="58" y="261.8">−250k</text><text x="58" y="199.8">−150k</text><text x="58" y="137.8">−50k</text><text x="58" y="106.8">0</text><text x="58" y="75.8">+50k</text></g>
+<g fill="#5A6B85" font-size="11" text-anchor="middle"><text x="64" y="290">Start</text><text x="216" y="290">Month 12</text><text x="368" y="290">Month 24</text><text x="520" y="290">Month 36</text></g>
+<polyline fill="none" stroke="#B85A0A" stroke-width="2" stroke-linejoin="round" points="64.0,257.8 76.7,256.2 89.3,254.6 102.0,253.0 114.7,251.4 127.3,249.8 140.0,248.2 152.7,246.6 165.3,245.0 178.0,243.3 190.7,241.7 203.3,240.1 216.0,238.5 228.7,236.9 241.3,235.3 254.0,233.7 266.7,232.1 279.3,230.5 292.0,228.9 304.7,227.3 317.3,225.7 330.0,224.1 342.7,222.5 355.3,220.9 368.0,219.3 380.7,217.7 393.3,216.0 406.0,214.4 418.7,212.8 431.3,211.2 444.0,209.6 456.7,208.0 469.3,206.4 482.0,204.8 494.7,203.2 507.3,201.6 520.0,200.0"></polyline>
+<polyline fill="none" stroke="#1D6FB8" stroke-width="2" stroke-dasharray="6 5" stroke-linejoin="round" points="64.0,115.2 76.7,117.6 89.3,120.0 102.0,122.4 114.7,124.8 127.3,127.2 140.0,129.6 152.7,132.0 165.3,134.4 178.0,136.7 190.7,139.1 203.3,141.5 216.0,143.9 228.7,163.6 241.3,164.7 254.0,165.8 266.7,166.9 279.3,168.0 292.0,169.1 304.7,170.2 317.3,171.3 330.0,172.4 342.7,173.5 355.3,174.6 368.0,175.7 380.7,175.2 393.3,174.6 406.0,174.1 418.7,173.6 431.3,173.0 444.0,172.5 456.7,171.9 469.3,171.4 482.0,170.9 494.7,170.3 507.3,169.8 520.0,169.2"></polyline>
+<polyline fill="none" stroke="#1D6FB8" stroke-width="2" stroke-linejoin="round" points="64.0,115.2 76.7,115.7 89.3,116.3 102.0,116.8 114.7,117.3 127.3,117.9 140.0,118.4 152.7,119.0 165.3,119.5 178.0,120.0 190.7,120.6 203.3,121.1 216.0,121.6 228.7,137.6 241.3,135.0 254.0,132.4 266.7,129.8 279.3,127.2 292.0,124.6 304.7,121.9 317.3,119.3 330.0,116.7 342.7,114.1 355.3,111.5 368.0,108.9 380.7,103.2 393.3,97.6 406.0,91.9 418.7,86.3 431.3,80.6 444.0,75.0 456.7,69.3 469.3,63.7 482.0,58.0 494.7,52.4 507.3,46.8 520.0,41.1"></polyline>
+<circle cx="520" cy="200" r="4" fill="#B85A0A" stroke="#FFFFFF" stroke-width="2"><title>Buy cars, month 36: −USD 156,760 cash</title></circle>
+<circle cx="520" cy="104.8" r="5" fill="#FFFFFF" stroke="#B85A0A" stroke-width="2"><title>Buy cars, month 36 incl. resale of cars: about −USD 3,200</title></circle>
+<circle cx="520" cy="41.1" r="4" fill="#1D6FB8" stroke="#FFFFFF" stroke-width="2"><title>Hybrid base, month 36: +USD 99,496</title></circle>
+<circle cx="520" cy="169.2" r="4" fill="#1D6FB8" stroke="#FFFFFF" stroke-width="2"><title>Hybrid downside, month 36: −USD 107,173</title></circle>
+<circle cx="228.7" cy="137.6" r="4" fill="#1D6FB8" stroke="#FFFFFF" stroke-width="2"><title>Hybrid base, month 13 (app built): −USD 56,174, the maximum exposure</title></circle>
+<g fill="#22304A" font-size="11"><text x="530" y="45">Hybrid +$99k</text><text x="530" y="101">Cars + resale</text><text x="530" y="114">≈ −$3k</text><text x="530" y="173">Downside −$107k</text><text x="530" y="204">Buy cars −$157k</text></g>
+</svg>
+</figure>
+</div>
+</sc-if>
+
+<sc-if value="{{c4}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #4A5568">CASE · STEP 4 · SEARCH</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Design</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Driving idea:</b> the driver is the product; cars are a leasable commodity.</p></div>
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">WHAT HAPPENS</div><p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: #3E4C63">The business matches premium clients with drivers whose skills fit them: languages, local history, medical-escort care, event logistics. It sells mainly through its own channel (hotels, clinics, event organizers, corporate accounts), operating legally as special transport, with Uber only as a backup.</p></div>
+<div style="flex: 1 1 220px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">KEY OUTPUT</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px"><li><span style="color: {{accent}}">◆</span> To-Be model: own channel first</li><li>TASCOI of the matching system</li><li>Value map per segment</li></ul></div>
+</div>
+</sc-if>
+
+<sc-if value="{{c5}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #4A5568">CASE · STEP 5 · FIND</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Mitigate</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Test before you buy:</b> a cheap pilot comes before any car or app.</p></div>
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">THE TESTS</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px; color: #3E4C63"><li>20 clients, 6 weeks: right if at least 40% rebook a matched driver</li><li>Landing page: “luxury car” vs. “your bilingual driver”</li><li>Pitch Serena del Mar’s international-patient office and 4 hotels: right if at least 2 sign</li><li>Legal check with a transport lawyer</li></ul></div>
+<div style="flex: 1 1 220px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">KEY OUTPUT</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px"><li><span style="color: {{accent}}">◆</span> 5 tech options; chosen: WhatsApp + CRM concierge, plus B2B referrals</li><li>Obstacle chain</li><li>Hypothesis board</li></ul></div>
+</div>
+</sc-if>
+
+<sc-if value="{{c6}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #4A5568">CASE · STEP 6 · TAKE</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Plan</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Pay the price:</b> the partners let go of “we wanted cars”.</p></div>
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">THE HYBRID NUMBERS</div><p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: #3E4C63">USD 20k to launch with leased cars; the app is built only after the pilot. Maximum exposure about USD 56k, break-even in month 26, +USD 99k by month 36. If own-channel revenue is 30% lower: −USD 107k. That downside is why the pilot gate exists.</p></div>
+<div style="flex: 1 1 220px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">KEY OUTPUT</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px"><li>Logframe: 100 recurring clients in 12 months</li><li><span style="color: {{accent}}">◆</span> Data &amp; AI roadmap</li><li>Budget and pilot gate</li></ul></div>
+</div>
+</sc-if>
+
+<sc-if value="{{c7}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #8A3B12">CASE · STEP 7 · RETURN</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Decide</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>Why now:</b> “Match people, create journeys.”</p></div>
+<div style="flex: 2 1 360px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">THE BIG IDEA</div><p style="margin: 6px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 18px; line-height: 26px">“Don’t buy cars yet. Fund a 3-month concierge pilot (about USD 20k) that proves Cartagena’s premium clients will rebook a matched driver. If at least 40% rebook, lease the fleet and build the matching app.”</p><p style="margin: 8px 0 0; font-size: 14px; line-height: 21px; color: #3E4C63"><b>Call to action:</b> approve the pilot, name the lead partner, commission the legal check.</p></div>
+</div>
+</sc-if>
+
+<sc-if value="{{c8}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0"><div style="font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.14em; color: #8A3B12">CASE · STEP 8 · CHANGE</div><h2 style="margin: 2px 0 4px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 32px">Run &amp; learn</h2><p style="margin: 0; font-size: 15px; line-height: 22px; color: #3E4C63"><b>The new why:</b> trusted, exclusive journeys with the driver who fits each client.</p></div>
+<div style="flex: 1 1 260px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">WHAT HAPPENS</div><p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: #3E4C63">AI moves to the right place: a matching engine (client needs ↔ driver skills) and demand forecasting around events and cruise seasons. The double loop asks: is this a ride business, or a driver-talent and hospitality agency?</p></div>
+<div style="flex: 1 1 220px; min-width: 0"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #5A6B85">KEY OUTPUT</div><ul style="margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 21px"><li><span style="color: {{accent}}">◆</span> Data foundation from day one</li><li>Dashboard: rebooking, satisfaction by match, revenue per driver-hour</li><li>Learning cards</li></ul></div>
+</div>
+</sc-if>
+
 <sc-if value="{{showNav}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-top: 14px; padding-top: 12px; border-top: 1px solid #E4E8EF">
 <button type="button" onClick="{{p0}}" style="min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid #C9D4E3; background: #FFFFFF; color: #14213D; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">◎ Purpose</button>
@@ -164,7 +261,7 @@ button:focus-visible{outline:3px solid #1D6FB8;outline-offset:2px}
 <div style="position: absolute; left: 50%; top: 2.6%; transform: translateX(-50%); white-space: nowrap; font-size: clamp(7px, 1.2cqw, 13px); font-weight: 700; letter-spacing: 0.12em; color: #5A6B85">WHAT · DELIVERABLES</div>
 <div style="position: absolute; left: 50%; top: 18.4%; transform: translateX(-50%); white-space: nowrap; font-size: clamp(7px, 1.2cqw, 13px); font-weight: 700; letter-spacing: 0.12em; color: #22304A">HOW ↻</div>
 
-<button type="button" aria-label="Purpose: why" onClick="{{p0}}" style="position: absolute; left: 35%; top: 35%; width: 30%; height: 30%; box-sizing: border-box; border-radius: 50%; border: none; background: #14213D; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8cqw; padding: 0; cursor: pointer; font-family: inherit; text-align: center"><span style="display: block; font-size: clamp(7px, 1.3cqw, 13px); font-weight: 700; letter-spacing: 0.18em; color: #F4A259">WHY</span><span style="display: block; font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(13px, 3.4cqw, 30px); line-height: 1.15; font-weight: 700">Dissolve,<br>don’t patch.</span><span class="dd-sm-hide" style="display: block; margin-top: 0.6cqw; font-size: clamp(7px, 1.05cqw, 11px); font-weight: 700; letter-spacing: 0.1em"><span style="color: #C9D4E3">◂ ANALYTICAL</span>   <span style="color: #F4A259">CREATIVE ▸</span></span></button>
+<button type="button" aria-label="Purpose: why" onClick="{{p0}}" style="position: absolute; left: 35%; top: 35%; width: 30%; height: 30%; box-sizing: border-box; border-radius: 50%; border: none; background: #14213D; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8cqw; padding: 0; cursor: pointer; font-family: inherit; text-align: center"><span style="display: block; font-size: clamp(7px, 1.3cqw, 13px); font-weight: 700; letter-spacing: 0.18em; color: #F4A259">WHY</span><span style="display: block; max-width: 24cqw; font-family: 'Space Grotesk', Inter, sans-serif; font-size: {{coreSize}}; line-height: 1.15; font-weight: 700; white-space: pre-line">{{coreHead}}</span><span class="dd-sm-hide" style="display: block; margin-top: 0.6cqw; font-size: clamp(7px, 1.05cqw, 11px); font-weight: 700; letter-spacing: 0.1em"><span style="color: #C9D4E3">◂ ANALYTICAL</span>   <span style="color: #F4A259">CREATIVE ▸</span></span></button>
 
 <button type="button" aria-label="Step 1, Engage" aria-pressed="{{a1}}" onClick="{{p1}}" style="position: absolute; left: 72.6%; top: 59.4%; width: 15%; height: 9%; transform: translate(-50%, -50%); box-sizing: border-box; border: 1.5px solid {{hbd1}}; border-radius: 12px; background: {{hb1}}; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 4px; cursor: pointer; font-family: inherit; color: #14213D; text-align: center; line-height: 1.15"><span class="dd-hk" style="font-size: clamp(7px, 1.2cqw, 11px); font-weight: 700; letter-spacing: 0.1em; color: #8A3B12">1 · YOU</span><span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(11px, 2.4cqw, 19px); font-weight: 700">Engage</span></button>
 <button type="button" aria-label="Step 2, Understand" aria-pressed="{{a2}}" onClick="{{p2}}" style="position: absolute; left: 59.4%; top: 72.6%; width: 15%; height: 9%; transform: translate(-50%, -50%); box-sizing: border-box; border: 1.5px solid {{hbd2}}; border-radius: 12px; background: {{hb2}}; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 4px; cursor: pointer; font-family: inherit; color: #14213D; text-align: center; line-height: 1.15"><span class="dd-hk" style="font-size: clamp(7px, 1.2cqw, 11px); font-weight: 700; letter-spacing: 0.1em; color: #8A3B12">2 · NEED</span><span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(11px, 2.4cqw, 19px); font-weight: 700">Understand</span></button>
@@ -192,7 +289,7 @@ button:focus-visible{outline:3px solid #1D6FB8;outline-offset:2px}
 <div style="flex: 1 1 280px; min-width: 0; font-size: 14px; line-height: 21px; color: #22304A"><b style="font-size: 15px">Three books, one line</b><br><b>DP</b> Dissolving Problems: frame the mess, design the ideal, turn obstacles into projects.<br><b>VPD</b> Value Proposition Design: find what each actor truly needs, and test it before building.<br><b>SwD</b> Storytelling with Data: context, clarity and a call to action.</div>
 <div style="flex: 1 1 280px; min-width: 0; font-size: 14px; line-height: 21px; color: #22304A"><b style="font-size: 15px"><span style="color: {{accent}}">◆</span> Digital transformation track</b><br>Diamonds mark the digital-transformation deliverables: As-Is diagnosis → To-Be redesign → up to five technology options → data &amp; AI roadmap → data foundation, data culture and certified champions.</div>
 </div>
-<p style="max-width: 1100px; margin: 24px auto 0; font-size: 12px; line-height: 18px; color: #5A6B85">Sources: Aldana &amp; Reyes, Disolver Problemas (Uniandes) · Osterwalder, Pigneur, Bernarda &amp; Smith, Value Proposition Design (Wiley, 2014) · Knaflic, Storytelling with Data (Wiley, 2015) · Sinek, Start with Why · Harmon, Story Circle · The creative/analytical halves are a metaphor for two modes of thinking, not brain anatomy.</p>
+<p style="max-width: 1100px; margin: 24px auto 0; font-size: 12px; line-height: 18px; color: #5A6B85">Sources: Aldana &amp; Reyes, Disolver Problemas (Uniandes) · Osterwalder, Pigneur, Bernarda &amp; Smith, Value Proposition Design (Wiley, 2014) · Knaflic, Storytelling with Data (Wiley, 2015) · Sinek, Start with Why · Harmon, Story Circle · The creative/analytical halves are a metaphor for two modes of thinking, not brain anatomy. · Case: market facts from Corpoturismo, the Alcaldía de Cartagena, El Universal, Vanguardia, Forbes Colombia, Hospital Serena del Mar and Transfeero (2025–2026); business figures are illustrative assumptions, and the regulatory summary is not legal advice.</p>
 
 </div>
 </x-dc>
@@ -200,24 +297,48 @@ button:focus-visible{outline:3px solid #1D6FB8;outline-offset:2px}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { sel: 0 };
+    this.state = { sel: 0, mode: 'fw' };
   }
   renderVals() {
     const accent = this.props.accent ?? '#B85A0A';
     const sel = (this.state && this.state.sel) || 0;
+    const cs = this.state && this.state.mode === 'case';
     const v = { accent: accent };
     const go = (n) => () => this.setState({ sel: n });
     v.p0 = go(0);
+    v.toFw = () => this.setState({ mode: 'fw', sel: 0 });
+    v.toCase = () => this.setState({ mode: 'case', sel: 0 });
+    v.mFwOn = cs ? 'false' : 'true';
+    v.mCaseOn = cs ? 'true' : 'false';
+    v.mFwBg = cs ? '#FFFFFF' : '#14213D';
+    v.mFwInk = cs ? '#14213D' : '#FFFFFF';
+    v.mCaseBg = cs ? '#14213D' : '#FFFFFF';
+    v.mCaseInk = cs ? '#FFFFFF' : '#14213D';
+    v.c0 = cs && sel === 0;
+    if (!cs) {
+      v.coreHead = 'Dissolve,\ndon’t patch.';
+      v.coreSize = 'clamp(13px, 3.4cqw, 30px)';
+    } else if (sel === 0 || sel <= 2) {
+      v.coreHead = 'Earn a second income with good cars.';
+      v.coreSize = 'clamp(11px, 2.5cqw, 22px)';
+    } else if (sel <= 6) {
+      v.coreHead = 'Win and keep the right clients.';
+      v.coreSize = 'clamp(11px, 2.5cqw, 22px)';
+    } else {
+      v.coreHead = 'Match people, create journeys.';
+      v.coreSize = 'clamp(11px, 2.5cqw, 22px)';
+    }
     for (let k = 1; k <= 8; k++) {
       const on = sel === k;
       v['p' + k] = go(k);
-      v['show' + k] = on;
+      v['show' + k] = on && !cs;
+      v['c' + k] = on && cs;
       v['a' + k] = on ? 'true' : 'false';
       v['ob' + k] = on ? ('3px solid ' + accent) : '2px solid #FFFFFF';
       v['hb' + k] = on ? '#FFFFFF' : 'transparent';
       v['hbd' + k] = on ? accent : 'transparent';
     }
-    v.show0 = sel === 0;
+    v.show0 = sel === 0 && !cs;
     v.showNav = sel !== 0;
     v.posLabel = sel + ' / 8';
     v.prev = () => this.setState({ sel: sel <= 1 ? 8 : sel - 1 });
